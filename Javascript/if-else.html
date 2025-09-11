@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="a"></p>
+
+    <script>
+        // var num = 10 ;
+        // if(num%2==0){
+        //     document.write("even");
+        // } else{
+        //     document.write("odd");
+        // }
+
+
+        // var a = 10 ;
+        // var b = 20 ;
+        // var c = 30;
+
+        // if(a>b && a>c){
+        //     alert(a,"a is greater"+" "+a);
+        // } 
+        // else if(b>a && b>c){
+        //     alert(b,"b is greater"+" "+b);
+        // } else{
+        //     alert("c is greater" +" "+ c);
+        // }
+
+
+        // Switch Case
+        var day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tueday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+                break;
+        }
+        document.getElementById("a").innerHTML="Today is" +" "+ day;
+
+    </script>
+</body>
+
+</html>
