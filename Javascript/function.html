@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        #a{
+            border: 4px solid black;
+            height:300px;
+            width: 300px;
+            background-color: bisque;
+
+        }
+    </style>
 </head>
-<body>
+<body id="abi">
+    
+    <button onclick="red()">RED</button>
+    <button onclick="green()">GREEN</button>
+    <button onclick="blue()">BLUE</button>
+
     <script>
-        function add( a , b){
-            var sum = a + b ;
-            document.write(sum);
-            
-        }
-        function dif( a , b){
-            var sub = a - b ;
-            document.write(sub);
-            
-        }
-        add(10 , 40);
-        dif(50 , 40);
+       function red(){
+            document.getElementById("abi").style.backgroundColor="red";
+       }
+       function green(){
+            document.getElementById("abi").style.backgroundColor="lightgreen";
+       }
+       function blue(){
+            document.getElementById("abi").style.backgroundColor="skyblue";
+       }
+
+
         
     </script>
 </body>
