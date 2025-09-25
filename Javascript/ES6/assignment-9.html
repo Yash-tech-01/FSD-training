@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #res {
+            height: 700px;
+            width: 800px;
+            border: 2px solid black;
+        }
+
+        #name {
+            display: flex;
+        }
+
+        #res img {
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        #res h1 {
+            justify-content: center;
+        }
+
+        #edu {
+            padding-left: 200px;
+        }
+
+        #skill {
+            margin-top: 180px;
+            margin-left: 25px;
+        }
+
+        body {
+            display: flex;
+        }
+
+        #form {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="res">
+        <div id="name">
+            <img src="https://img.freepik.com/premium-photo/boy-cartoon-portrait-generated-by-ai_996128-124.jpg" alt=""
+                width="200px" height="200px">
+
+            <h1 id="head"> name </h1>
+        </div>
+
+        <div id="edu">
+            <h1>Education</h1>
+        </div>
+
+        <div id="skill">
+            <h1 id="he">Skills</h1>
+            <ul id="li">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <h1 id="address">Address</h1>
+        </div>
+    </div>
+
+    <div id="form">
+        <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name1"> <br><br>
+
+            <label for="class">Class</label>
+            <input type="text" id="clas"><br><br>
+
+            <label for="">Skills</label>
+            <input type="text" id="list"><br><br>
+
+            <label for="Address">Address</label>
+            <textarea name="" id="adi"></textarea><br><br>
+            <button> Submit </button>
+        </form>
+    </div>
+
+    <script>
+ 
+            const form = document.querySelector("form");
+            form.addEventListener("submit", function (event) {
+            event.preventDefault();  
+            const nameInput = document.getElementById("name1").value;
+            document.getElementById("head").innerHTML = nameInput;
+
+
+
+
+            let ed = document.getElementById("clas");
+            let e = ed.value;
+            document.getElementById("edu").innerHTML=e;
+
+            let a1 = document.getElementById("adi");
+            let a2 = a1.value;
+            document.getElementById("address").innerHTML=e;
+
+            let l1 = document.getElementsById("list");
+            let l2 = l1.value;
+            document.getElementById("li").innerHTML=l2;
+
+        });
+    </script>
+</body>
+</html>
