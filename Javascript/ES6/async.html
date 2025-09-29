@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <style>
-   
-   </style>
 </head>
 <body>
     
+    <!--  Sync - Code line will execute one by one -->
+    <!-- Async - If a code of line takes time then next code line will be executed and time taken condition will goes on hold  -->
     <script>
+
         console.log("task1");
         console.log("task2");
 
         setTimeout(()=>{
             console.log("hi")
         },4000);
-        
+
         console.log("task3");
         console.log("task4");
+
     </script>
 
 </body>

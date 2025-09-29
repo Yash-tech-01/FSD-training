@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <script>
+        // Promise
+
+        const mypromise = new Promise((resolve,reject)=>{
+           const password = "abcde@1234";
+           if(password.length > 8){
+            resolve("password length is ok");
+           } else{
+            reject("password is shorter in length");
+           }
+        })  
+
+        // console.log(mypromise);
+        
+        mypromise.then((msg)=>{                          // then handle promise when when value is true
+            console.log(msg);
+        })                         
+        mypromise.catch((err)=>{                         // use catch when error occured
+            console.log(err);
+        }).finally(()=>{
+            console.log("this is a finally statement");
+        })
+        
+
+
+    </script>
+</body>
+</html>
+

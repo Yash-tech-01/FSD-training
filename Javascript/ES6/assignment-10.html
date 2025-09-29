@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #main {
+            display: flex;
+        }
+
+        #todo {
+            border: 2px solid black;
+            height: 700px;
+            width: 600px;
+            text-align: center;
+
+        }
+
+        #todo input {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        #print {
+            border: 2px solid black;
+            height: 700px;
+            width: 600px;
+            text-align: center;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+        <div id="todo">
+
+            <h1>TO-DO List</h1>
+            <button onclick="add()">Add task</button><br>
+            <input type="text" id="inp"><br>
+
+            <button onclick="display()">List of all task</button>
+        </div>
+
+        <div id="print">
+        </div>
+    </div>
+    <script>
+
+        function add() {
+            document.getElementById("inp")
+            const input = document.createElement("input");
+            input.type = "text";
+            input.placeholder = "Enter something";
+            document.getElementById("todo").appendChild(input);
+        }
+
+        function display(){
+            let input = document.getElementById("inp");
+            let k = input.value;
+            document.getElementById("print").innerHTML=k;
+        }
+
+
+    </script>
+</body>
+
+</html>
